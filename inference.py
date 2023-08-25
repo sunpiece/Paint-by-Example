@@ -362,8 +362,6 @@ def main():
 
                 if not opt.skip_save:
                     for i,x_sample in enumerate(x_checked_image_torch):
-                        
-
                         all_img=[]
                         all_img.append(un_norm(image_tensor[i]).cpu())
                         all_img.append(un_norm(inpaint_image[i]).cpu())

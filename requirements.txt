@@ -1,0 +1,11 @@
+albumentations==0.4.3
+diffusers
+bezier
+pudb==2019.2
+imageio-ffmpeg==0.4.2
+omegaconf==2.1.1
+test-tube>=0.7.5
+streamlit>=0.73.1
+torch-fidelity==0.3.0
+invisible-watermark
+kornia==0.6
