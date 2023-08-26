@@ -90,7 +90,9 @@ def get_obj_from_str(string, reload=False):
     if reload:
         module_imp = importlib.import_module(module)
         importlib.reload(module_imp)
-    return getattr(importlib.import_module(module, package=None), cls)
+    cls_name =  importlib.import_module(module, package=None)
+    # print('cls_name:', cls_name)
+    return getattr(cls_name, cls)
 
 
 def _do_parallel_data_prefetch(func, Q, data, idx, idx_to_fn=False):

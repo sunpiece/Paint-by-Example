@@ -31,6 +31,7 @@ safety_feature_extractor = AutoFeatureExtractor.from_pretrained(safety_model_id)
 safety_checker = StableDiffusionSafetyChecker.from_pretrained(safety_model_id)
 
 os.environ['TORCH_HOME'] = "/sun/home_torch"
+os.environ['TRANSFORMERS_CACHE'] = '/sun/home_torch/hugface/transformers'
 
 
 def chunk(it, size):
